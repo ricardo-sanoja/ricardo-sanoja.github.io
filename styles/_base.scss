@@ -1,0 +1,16 @@
+
+body{
+    display: grid;
+    grid-template-columns:repeat(20,5%);
+}
+
+h1,h2, h3,h4,h5,h6{
+    font-family: 'yeseva one',serif;
+    color: $navy_blue;
+
+}
+
+p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $navy_blue;
+}

@@ -1,0 +1,98 @@
+/* makes sizing simpler */
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+/* min body height */
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (5%)[20];
+      grid-template-columns: repeat(20, 5%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'yeseva one',serif;
+  color: #092353;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #092353;
+}
+
+.nav_bar {
+  margin-top: 10px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 18;
+  grid-column: 2/20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_bar nav a {
+  margin: 0 30px;
+  color: #092353;
+  text-decoration: none;
+  font-family: 'yeseva one';
+}
+
+.intro {
+  margin-top: 50px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 18;
+  grid-column: 2/20;
+}
+
+.intro h2 {
+  font-size: 48px;
+}
+
+.intro .__paragraph {
+  padding-left: 40px;
+}
+
+.intro .__paragraph .___one {
+  font-style: italic;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.work_section {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 18;
+  grid-column: 2/20;
+  display: -ms-grid;
+  display: grid;
+}
+/*# sourceMappingURL=index.css.map */
