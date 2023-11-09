@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #092353;
 }
 
+h2 {
+  font-size: 48px;
+}
+
 p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #092353;
@@ -94,5 +98,146 @@ p {
   grid-column: 2/20;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-top: 50px;
+}
+
+.work_section .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 2px #1F8293;
+  margin: 10px;
+  padding: 15px;
+}
+
+.work_section .project a {
+  text-decoration: none;
+}
+
+.work_section .project a:hover {
+  background-color: orange;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.work_section .project a:hover h2, .work_section .project a:hover p {
+  color: white;
+}
+
+.work_section .project p {
+  font-style: italic;
+}
+
+.contact {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 18;
+  grid-column: 2/20;
+  margin-top: 50px;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact .social_medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .social_medias .sm {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.contact .social_medias .sm a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact .social_medias .sm a img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.about_me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 16;
+  grid-column: 3/19;
+  margin-top: 60px;
+}
+
+.about_me .blurb {
+  margin-top: 40px;
+  margin-right: 100px;
+}
+
+.about_me .blurb .header {
+  margin-bottom: 20px;
+}
+
+.about_me .blurb .bio {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about_me .blurb .contact_smaller {
+  border: solid 2px #1F8293;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.about_me .blurb .contact_smaller .social_medias .sm {
+  margin-top: 10px;
+}
+
+.about_me .blurb .contact_smaller .social_medias .sm a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.about_me .blurb .contact_smaller .social_medias .sm a img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 20px;
+}
+
+.about_me .resume {
+  font-family: yeseva one;
+  font-size: 32px;
+  text-decoration: none;
+  border: solid 2px #1F8293;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 65px;
+  padding-right: 60px;
+  color: #092353;
+}
+
+.about_me .resume a:hover {
+  color: white;
+  background-color: #092353;
+}
+
+.about_me img {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 /*# sourceMappingURL=index.css.map */
