@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
  nav{
   a{
@@ -15,18 +16,25 @@
     font-family:'yeseva one';
   }
  }
+ 
 }
+
 
 .intro{
     margin-top: 50px;
     grid-column: 2/20;
     h2{
         font-size: 48px;
+        @include respond(430px){
+            font-size: 30px;
+        }
     }
     .__paragraph{
         padding-left: 40px;
         .___one{
-
+            @include respond(430px){
+                font-size: 30px;
+            } 
             font-style:italic;
             font-size: 40px;
             margin-top: 10px;
@@ -38,26 +46,50 @@
 .work_section{
     grid-column: 2/20;
     display: grid;
+    @include respond(430px){
+        display: block;
+    }
     grid-template-columns: 50% 50%;
     margin-top: 50px;
     .project{
         display: flex;
         border: solid 2px #1F8293;
         margin: 10px;
-        padding: 15px;
+        
         a{
             text-decoration: none;
+            padding: 15px;
+            transition: all .5s ease;
+            @include respond(430px){
+                h2{
+                    font-size: 30px;
+                }
+            }  
         }
         a:hover{
-            background-color: orange;
+            background-color: #F1915D;
             h2, p{
+                transition: all 0.5 ease;
                 color: white;
             }
             transform: scale(1.05);
-            transition: all .5s ease;
+            
         }
         p{
             font-style: italic;
+           
+            &::before{
+                content:'';
+                width: 100px;
+                height: 2px;
+                background-color: $navy_blue;
+                display: block;
+                margin-block: 10px;
+                :hover{
+                    transition: all 0.5 ease;
+                    color: white;
+                }
+            }
         }
     }
 }
@@ -71,11 +103,17 @@
     .social_medias{
         display: flex;
         justify-content: center;
+        @include respond(430px){
+            display:block ;
+        }
         .sm{
            margin-left: 100px;
            margin-right: 100px;
            margin-top: 50px;
            margin-bottom: 100px;
+           @include respond(430px){
+            margin-bottom: 20px;
+        }
             a{
                 text-decoration: none;
                 text-align: center;
@@ -97,6 +135,7 @@
     display: flex;
     grid-column: 3/19;
     margin-top: 60px;
+    
 
     .blurb{
         margin-top: 40px;
@@ -104,11 +143,13 @@
         .header{
             margin-bottom: 20px;
         }
+        
         .bio{
             margin-top: 20px;
             margin-bottom: 20px;
         }
-
+        
+        
         .contact_smaller{
             border: solid 2px #1F8293;
             padding: 20px;
@@ -142,9 +183,15 @@
         padding-left: 65px;
         padding-right: 60px;
         color: $navy_blue;
-        a:hover{
+        transition: all 0.5 ease;
+
+        &:hover{
             color: white;
             background-color: $navy_blue;
+            a{
+                transition: all 0.5 ease;
+            }
+            
         }
     }
     

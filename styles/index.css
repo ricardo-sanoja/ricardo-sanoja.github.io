@@ -81,6 +81,12 @@ p {
   font-size: 48px;
 }
 
+@media screen and (max-width: 430px) {
+  .intro h2 {
+    font-size: 30px;
+  }
+}
+
 .intro .__paragraph {
   padding-left: 40px;
 }
@@ -90,6 +96,12 @@ p {
   font-size: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 430px) {
+  .intro .__paragraph .___one {
+    font-size: 30px;
+  }
 }
 
 .work_section {
@@ -103,33 +115,62 @@ p {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 430px) {
+  .work_section {
+    display: block;
+  }
+}
+
 .work_section .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: solid 2px #1F8293;
   margin: 10px;
-  padding: 15px;
 }
 
 .work_section .project a {
   text-decoration: none;
-}
-
-.work_section .project a:hover {
-  background-color: orange;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  padding: 15px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
+@media screen and (max-width: 430px) {
+  .work_section .project a h2 {
+    font-size: 30px;
+  }
+}
+
+.work_section .project a:hover {
+  background-color: #F1915D;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .work_section .project a:hover h2, .work_section .project a:hover p {
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
   color: white;
 }
 
 .work_section .project p {
   font-style: italic;
+}
+
+.work_section .project p::before {
+  content: '';
+  width: 100px;
+  height: 2px;
+  background-color: #092353;
+  display: block;
+  margin-block: 10px;
+}
+
+.work_section .project p::before :hover {
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+  color: white;
 }
 
 .contact {
@@ -152,11 +193,23 @@ p {
           justify-content: center;
 }
 
+@media screen and (max-width: 430px) {
+  .contact .social_medias {
+    display: block;
+  }
+}
+
 .contact .social_medias .sm {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+@media screen and (max-width: 430px) {
+  .contact .social_medias .sm {
+    margin-bottom: 20px;
+  }
 }
 
 .contact .social_medias .sm a {
@@ -229,11 +282,18 @@ p {
   padding-left: 65px;
   padding-right: 60px;
   color: #092353;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
 }
 
-.about_me .resume a:hover {
+.about_me .resume:hover {
   color: white;
   background-color: #092353;
+}
+
+.about_me .resume:hover a {
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
 }
 
 .about_me img {

@@ -1,7 +1,5 @@
 @mixin respond($screenSize){
-    @media screen and (min-width: $screenSize){
-        background-color: green;
+    @media screen and (max-width: $screenSize){
+        @content;
     }
-
-
 }
