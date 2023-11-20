@@ -70,6 +70,57 @@ p {
   font-family: 'yeseva one';
 }
 
+@media screen and (max-width: 430px) {
+  .nav_bar nav {
+    position: absolute;
+    top: -250px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    -webkit-transition: top .3s ease;
+    transition: top .3s ease;
+  }
+  .nav_bar nav.active {
+    top: 0;
+  }
+  .nav_bar nav a {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.nav_bar .hamburger {
+  width: 35px;
+  height: 35px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  display: none;
+  position: relative;
+}
+
+@media screen and (max-width: 430px) {
+  .nav_bar .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.nav_bar .hamburger span {
+  display: block;
+  width: 100%;
+  background-color: #092353;
+  height: 5px;
+}
+
 .intro {
   margin-top: 50px;
   -ms-grid-column: 2;
@@ -234,24 +285,70 @@ p {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 430px) {
+  .about_me {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
 .about_me .blurb {
-  margin-top: 40px;
   margin-right: 100px;
 }
 
-.about_me .blurb .header {
+@media screen and (max-width: 430px) {
+  .about_me .blurb {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .about_me .blurb .intro {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
+.about_me .blurb .intro .header {
   margin-bottom: 20px;
 }
 
-.about_me .blurb .bio {
+.about_me .blurb .intro .bio {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 430px) {
+  .about_me .blurb .mobile_contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about_me .blurb .mobile_contact .resume {
+    margin-bottom: 20px;
+  }
 }
 
 .about_me .blurb .contact_smaller {
   border: solid 2px #1F8293;
   padding: 20px;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 430px) {
+  .about_me .blurb .contact_smaller {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .about_me .blurb .contact_smaller h2 {
+    font-size: 30px;
+  }
 }
 
 .about_me .blurb .contact_smaller .social_medias .sm {
@@ -282,8 +379,23 @@ p {
   padding-left: 65px;
   padding-right: 60px;
   color: #092353;
-  -webkit-transition: all 0.5 ease;
-  transition: all 0.5 ease;
+}
+
+@media screen and (max-width: 430px) {
+  .about_me .resume {
+    padding-left: 0px;
+    padding-right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 30;
+  }
 }
 
 .about_me .resume:hover {
@@ -291,13 +403,21 @@ p {
   background-color: #092353;
 }
 
-.about_me .resume:hover a {
-  -webkit-transition: all 0.5 ease;
-  transition: all 0.5 ease;
-}
-
 .about_me img {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.about_me img.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 430px) {
+  .about_me img {
+    display: none;
+  }
+  .about_me img.mobile {
+    display: block;
+  }
 }
 /*# sourceMappingURL=index.css.map */

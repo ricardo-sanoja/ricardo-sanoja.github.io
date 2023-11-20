@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
-    
-        <link rel="stylesheet" href="./styles/index.css">
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src = "index.js" defer></script>
 </head>
 <body>
     <div class = "nav_bar">
@@ -18,16 +19,24 @@
             <a class = "about" href="./about_me.html">about</a>
             <a class = "contact" href="contact">contact</a>
         </nav>
+        <button data-js = "hamburger" class = "hamburger" aria-hidden ="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 
     <div class="about_me">
+        <img class = "mobile" src="./images/about_me_image.jpg" alt="picture of Ricardo Sanoja">
         <div class="blurb">
-            <h2 class=" header">About Me</h2>
-            <p class = "bio">Welcome! I’m a UI/UX designer with 
-            graphic design projects and illustrations.</p>
-            <p class="bio">I have spent my college years learning multiple disciplines regarding art in our modern world. Whether it be 3d modeling and surfacing, animation, traditional and digital art, graphic design, or UI UX, I’ve worked to learn as much as I can about the art world developing around us.</p>
-            <p class="bio">Feel free to look around my page and reach out if you have any questions!</p>
-
+            <div class="intro">
+                <h2 class=" header">About Me</h2>
+                <p class = "bio">Welcome! I’m a UI/UX designer with 
+                graphic design projects and illustrations.</p>
+                <p class="bio">I have spent my college years learning multiple disciplines regarding art in our modern world. Whether it be 3d modeling and surfacing, animation, traditional and digital art, graphic design, or UI UX, I’ve worked to learn as much as I can about the art world developing around us.</p>
+                <p class="bio">Feel free to look around my page and reach out if you have any questions!</p>
+            </div>
+            <div class="mobile_contact">
                 <div class="contact_smaller">
                     <h2>Contact Me</h2>
                     <div class="social_medias">
@@ -54,6 +63,7 @@
                 </div>
                 
                 <a href="" class="resume">View My Resume</a>
+            </div>
         </div>
         <img src="./images/about_me_image.jpg" alt="picture of Ricardo Sanoja">
 
